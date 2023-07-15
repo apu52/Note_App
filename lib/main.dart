@@ -3,8 +3,8 @@ import 'package:note_app2/databaseManager/database_provider.dart';
 import 'package:note_app2/models/note_model.dart';
 import 'package:note_app2/screens/add_note.dart';
 import 'package:note_app2/screens/display_notes.dart';
-// import 'package:note_app2/screens/splash_screen.dart';
 import 'package:intl/intl.dart';
+import 'package:note_app2/screens/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -45,7 +45,9 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const HomeScreen(),
+      initialRoute: "/splash",
       routes: {
+        "/splash": (context) => const SplashScreen(),
         "/home": (context) => const HomeScreen(),
         "/AddNote": (context) => const AddNote(
               note: null,
@@ -130,7 +132,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     arguments: NoteModel(
                                         title: title,
                                         body: body,
-                                        creation_date: creationDate,
+                                        creationDate: creationDate,
                                         id: id));
                               },
                               title: Text(

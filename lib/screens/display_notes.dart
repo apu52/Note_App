@@ -75,7 +75,7 @@ class _ShowNoteState extends State<ShowNote> {
         onPressed: () async {
           Navigator.of(context).push(MaterialPageRoute(
               builder: (context) =>
-                  EditNotes(note: note, creation_date: DateTime.now())));
+                  EditNotes(note: note, creationDate: DateTime.now())));
         },
         child: const Icon(Icons.edit),
       ),

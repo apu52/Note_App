@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:note_app2/databaseManager/database_provider.dart';
 import 'package:note_app2/main.dart';
@@ -6,9 +5,9 @@ import 'package:note_app2/models/note_model.dart';
 
 class EditNotes extends StatefulWidget {
   final NoteModel note;
-  final DateTime creation_date;
+  final DateTime creationDate;
 
-  EditNotes({Key? key, required this.note, required this.creation_date})
+  const EditNotes({Key? key, required this.note, required this.creationDate})
       : super(key: key);
 
   @override
@@ -46,8 +45,9 @@ class _EditNotesState extends State<EditNotes> {
                     id: widget.note.id,
                     title: title,
                     body: body,
-                    creation_date: widget.creation_date);
+                    creationDate: widget.creationDate);
                 await DatabaseProvider.db.editNotes(updatednote);
+                // ignore: use_build_context_synchronously
                 Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(builder: (context) => const HomeScreen()),

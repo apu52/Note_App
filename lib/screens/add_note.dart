@@ -68,11 +68,11 @@ class _AddNoteState extends State<AddNote> {
             date = DateTime.now();
           });
           NoteModel note =
-              NoteModel(title: title, body: body, creation_date: date);
+              NoteModel(title: title, body: body, creationDate: date);
           addNote(note);
           Navigator.pushAndRemoveUntil(
               context,
-              MaterialPageRoute(builder: (context) => HomeScreen()),
+              MaterialPageRoute(builder: (context) => const HomeScreen()),
               (route) => false);
         },
         label: const Text("Save Note"),

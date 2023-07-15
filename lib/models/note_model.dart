@@ -2,20 +2,20 @@ class NoteModel {
   int? id;
   String title;
   String body;
-  DateTime creation_date;
+  DateTime creationDate;
 
   NoteModel(
       {this.id,
       required this.title,
       required this.body,
-      required this.creation_date});
+      required this.creationDate});
 
   Map<String, dynamic> toMap() {
     return {
       'id': id,
       'title': title,
       'body': body,
-      'creation_date': creation_date.toString(),
+      'creation_date': creationDate.toString(),
     };
   }
 }
