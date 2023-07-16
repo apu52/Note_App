@@ -15,8 +15,8 @@ class EditNotes extends StatefulWidget {
 }
 
 class _EditNotesState extends State<EditNotes> {
-  late TextEditingController _updatedTitleController;
-  late TextEditingController _updatedBodyController;
+  late final TextEditingController _updatedTitleController;
+  late final TextEditingController _updatedBodyController;
   late String title;
   late String body;
   late DateTime date;
@@ -26,6 +26,13 @@ class _EditNotesState extends State<EditNotes> {
     super.initState();
     _updatedTitleController = TextEditingController(text: widget.note.title);
     _updatedBodyController = TextEditingController(text: widget.note.body);
+  }
+
+  @override
+  void dispose() {
+    _updatedBodyController.dispose();
+    _updatedTitleController.dispose();
+    super.dispose();
   }
 
   @override

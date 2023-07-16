@@ -15,8 +15,22 @@ class _AddNoteState extends State<AddNote> {
   late String body;
   late DateTime date;
 
-  TextEditingController titleController = TextEditingController();
-  TextEditingController bodyController = TextEditingController();
+  late final TextEditingController _titleController;
+  late final TextEditingController _bodyController;
+
+  @override
+  void initState() {
+    _titleController = TextEditingController();
+    _bodyController = TextEditingController();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _titleController.dispose();
+    _bodyController.dispose();
+    super.dispose();
+  }
 
   addNote(NoteModel note) {
     DatabaseProvider.db.addNewNote(note);
@@ -33,7 +47,7 @@ class _AddNoteState extends State<AddNote> {
         child: Column(
           children: [
             TextField(
-              controller: titleController,
+              controller: _titleController,
               maxLength: 20,
               autocorrect: true,
               keyboardType: TextInputType.text,
@@ -45,7 +59,7 @@ class _AddNoteState extends State<AddNote> {
             ),
             Expanded(
                 child: TextField(
-              controller: bodyController,
+              controller: _bodyController,
               enableSuggestions: true,
               keyboardType: TextInputType.multiline,
               textCapitalization: TextCapitalization.sentences,
@@ -63,8 +77,8 @@ class _AddNoteState extends State<AddNote> {
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () {
           setState(() {
-            title = titleController.text;
-            body = bodyController.text;
+            title = _titleController.text;
+            body = _bodyController.text;
             date = DateTime.now();
           });
           NoteModel note =
