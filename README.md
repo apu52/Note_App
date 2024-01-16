@@ -35,7 +35,7 @@ We welcome contributions from the community! If you'd like to contribute to this
 2. **Clone Your Fork:**
    - Clone the repository from your GitHub account to your local machine.
      ```bash
-     git clone https://github.com/your-username/flutter-project.git
+     git clone https://github.com/NabajitBhadury/Note_App.git
      ```
 
 3. **Create a Branch:**
