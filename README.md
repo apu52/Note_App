@@ -1,7 +1,8 @@
-# Note_app
+<h1><span><img src="https://media.giphy.com/media/QxwAkFFuYKkO8nydLT/giphy.gif" alt="Alt Text" width="40"/> &nbsp;Note_app</span></h1>
 
 Welcome to Note_app, our Flutter project! 
-## Getting Started
+
+<h2><span><img src="https://media.giphy.com/media/vNACsqooIUmcjzd5xR/giphy.gif" alt="Alt Text" width="40"/> &nbsp;Getting Started</span></h2>
 
 Flutter is a powerful framework for building natively compiled applications for mobile, web, and desktop from a single codebase. The language used, Dart, is beginner-friendly, making it an excellent choice for those aspiring to dive into app development. You can even explore web development and build web apps using this versatile framework.
 
@@ -98,5 +99,7 @@ If the original repository has been updated, sync your fork to include the lates
 
 This project thrives on community contributions. Whether you're fixing a bug, implementing a new feature, or enhancing documentation, your efforts are highly appreciated. Join us in making this Flutter project even better!
 
-Happy coding!
+<span> <img src ="https://media.giphy.com/media/cCOVfFwDI3awdse5A3/giphy.gif" width="50px"> Happy coding!</span>
 
+
+<center> <img src ="https://media.giphy.com/media/dQpUkK59l5Imxsh8jN/giphy.gif" > </center>
