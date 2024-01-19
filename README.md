@@ -2,6 +2,25 @@
 
 Welcome to Note_app, our Flutter project! 
 
+
+ <p>
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=NabajitBhadury%2FNote_App%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/NabajitBhadury/Note_App)
+![GitHub Repo stars](https://img.shields.io/github/stars/NabajitBhadury/Note_App)
+![GitHub contributors](https://img.shields.io/github/contributors/NabajitBhadury/Note_App)
+![GitHub last commit](https://img.shields.io/github/last-commit/NabajitBhadury/Note_App)
+![GitHub repo size](https://img.shields.io/github/repo-size/NabajitBhadury/Note_App)
+![Github](https://img.shields.io/github/license/NabajitBhadury/Note_App)
+![GitHub issues](https://img.shields.io/github/issues/NabajitBhadury/Note_App)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/NabajitBhadury/Note_App)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/NabajitBhadury/Note_App)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/NabajitBhadury/Note_App)
+
+ </p>
+
 <h2><span><img src="https://media.giphy.com/media/vNACsqooIUmcjzd5xR/giphy.gif" alt="Alt Text" width="40"/> &nbsp;Getting Started</span></h2>
 
 Flutter is a powerful framework for building natively compiled applications for mobile, web, and desktop from a single codebase. The language used, Dart, is beginner-friendly, making it an excellent choice for those aspiring to dive into app development. You can even explore web development and build web apps using this versatile framework.
